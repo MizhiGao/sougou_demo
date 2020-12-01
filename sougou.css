@@ -1,0 +1,253 @@
+*{
+    font-family:arial,'pingfang sc',stheiti,'microsoft yahei',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 13px;
+    width: 100%;
+    height:100%
+}
+body{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+  min-width: 1000px;
+}
+a{
+    text-decoration: none;
+    }
+nav>a:hover,.user a:hover{
+
+        color: coral;
+    }
+header{
+    height: 46px;
+    padding: 11px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+nav a{
+    color:#000000BF;
+    font-weight:lighter;
+    padding:0 10px;
+}
+nav:first-child{
+    font-weight: bolder;
+    color: #fd6853
+}
+
+.l-w,.user,.user a{
+    font-size: 12px;
+    color:#000000BF;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.u-nav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.postion-weather{
+    height: 24px;
+    padding:0 4px ;
+}
+.pw-more{
+    display: none;
+}   
+
+
+.u-nav:hover .pw-more{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    top:20px;
+    padding-top:10px;
+    width: 240px;
+}
+.m1-1{ 
+color: #666;
+font-size: 14px;
+width: 120px;
+}
+.m1-1,.m1-2{
+margin: 5px;
+}
+.m1-2{
+padding:0 5px ;    
+font-size: 14px;
+width: 80px;
+color: #999;}
+.m2-1,.m2-2{
+text-decoration: none;
+color: #333; 
+margin: 5px;
+height: 80px;
+}
+
+.m2-1{
+width: 120px;
+font-size: 56px;
+text-align: right;
+}
+.m2-2{
+vertical-align: top;
+width: 100px;
+text-align: left;
+
+}
+.m2-2-1,.m2-2-2{
+font-size: 16px;
+padding: 7px 7px 0;
+}
+.m2-2-3{
+padding: 7px 7px 0;   
+color: #999;
+}
+.m3-1,.m3-2,.m3-3{
+text-decoration: none;
+text-align:left;
+width:60px;
+font-size: 12px;
+color: #666;
+margin:15px 0 0 10px;
+}
+.m3-3{
+    padding-left: 10px;
+}
+.user a{
+    padding: 0 18px;
+}
+.user .enter{
+border: none;
+background-color:#fd6853;
+color:white;
+font-size: 12px;
+width: 44px;
+height: 24px;
+padding:0 10px; 
+border-radius: 2px;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search{
+    display: flex;
+    border:1px solid #ababab;
+    border-radius: 3px;
+    width: 655px;
+    height: 44px;
+    font-size:0;
+    padding-left: 10px;
+justify-content: space-between;
+}
+.search:hover{
+    border:1px solid #666;
+}
+.sr-in{
+    border: none;
+    width:489px;
+    height: 42px;
+    padding: 12px 0px;
+    outline: none;
+}
+.voice{
+    background:url('https://dlweb.sogoucdn.com/pcsearch/web/index/images/sprite_index_ab8c0ff.png')no-repeat 0 0;
+    display: inline-block;
+    width:22px;
+    height: 22px;
+    margin:10px 0;
+}
+.voice:hover{
+    background:url('https://dlweb.sogoucdn.com/pcsearch/web/index/images/sprite_index_ab8c0ff.png')no-repeat -25px 0;
+    
+}
+.sr-b{
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width:99px;
+    height: 42px;
+    background-color: #fff;
+}
+
+footer{
+   font-size: 12px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 0 0 28px;
+}
+.qrcode{
+    margin-bottom: 20px;
+}
+.qr-img{
+    width: 105px;
+    height: 105px;
+    margin: 5px 0;
+}
+.ft-a .lg-1{
+vertical-align: bottom;
+display: inline-block;
+width: 13px;   
+height:15px;
+background:url('https://dlweb.sogoucdn.com/pcsearch/web/index/images/ico_ft_8795b8d.gif?v=1e99707e') no-repeat 0 0;
+margin:4px 5px 0 0;
+}
+.ft-a a:hover .lg-1{
+background:url('https://dlweb.sogoucdn.com/pcsearch/web/index/images/ico_ft_8795b8d.gif?v=1e99707e') no-repeat 0 -15px;
+}
+.ft-a .lg-2{
+    vertical-align: bottom;
+    display: inline-block;
+    width: 13px;   
+    height:15px;
+    background:url('https://dlweb.sogoucdn.com/pcsearch/web/index/images/ico_ft_8795b8d.gif?v=1e99707e') no-repeat 0 -29px;
+    margin:4px 5px 0 0;
+    }
+    .ft-a a:hover .lg-2{
+    background:url('https://dlweb.sogoucdn.com/pcsearch/web/index/images/ico_ft_8795b8d.gif?v=1e99707e') no-repeat 0 -43px;
+    }
+.ft-a .lg-3{
+    vertical-align: bottom;
+    display: inline-block;
+    width: 13px;   
+    height:15px;
+    background:url('https://dlweb.sogoucdn.com/pcsearch/web/index/images/ico_ft_8795b8d.gif?v=1e99707e') no-repeat 0 -57px;
+    margin:4px 5px 0 0;
+    }
+    .ft-a a:hover .lg-3{
+    background:url('https://dlweb.sogoucdn.com/pcsearch/web/index/images/ico_ft_8795b8d.gif?v=1e99707e') no-repeat 0 -71px;
+    }
+footer p{
+    font-weight: bold;
+    font-size: 13px;   
+}
+footer .ft-info{
+    font-size: 12px;
+    text-align: center;
+line-height: 2em;
+color: #00000080;
+}
+.qrcode p,.ft-a a{
+    color: #000000B3;
+}
+.ft-info a,.ft-info span{
+    color: #00000080;
+}
+.ft-a a:hover,.ft-info a:hover{
+color: #000000E6;
+
+}
+.ft-a a{
+    margin-right: 13px;
+}
